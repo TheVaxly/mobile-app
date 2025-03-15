@@ -20,7 +20,18 @@ const styles = StyleSheet.create({
     color: "#FCA34D",
     textDecorationLine: "underline",
   },
-
+  buttonContainer: {
+    marginTop: 80,
+    gap: 20,
+    width: '100%',
+    paddingHorizontal: 20,
+  },
+  signInText: {
+    color: "#4F63AC",
+    textAlign: "center",
+    fontSize: 16,
+    fontWeight: "bold",
+  },
 });
 
 export default styles;
