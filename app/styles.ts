@@ -1,11 +1,12 @@
 import { StyleSheet } from "react-native";
+import { colors } from "../utils/colour";
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 200,
     alignItems: "center",
-    backgroundColor: "#FFF",
+    backgroundColor: colors.white,
   },
   image: {
     width: "100%",
@@ -17,7 +18,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   innerTitle: {
-    color: "#FCA34D",
+    color: colors.orange,
     textDecorationLine: "underline",
   },
   buttonContainer: {
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   signInText: {
-    color: "#4F63AC",
+    color: colors.blue,
     textAlign: "center",
     fontSize: 16,
     fontWeight: "bold",
