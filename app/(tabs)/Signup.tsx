@@ -7,6 +7,7 @@ import Checkbox from "@/components/Checkbox";
 import styles from "./styles";
 import { useState } from "react";
 import { Text } from "react-native";
+import Button from "@/components/Button";
 
  const Signup = () => {
   const [checked, setChecked] = useState(false)
@@ -23,9 +24,10 @@ import { Text } from "react-native";
       <Input label="Email" placeholder="some@one.com"/>
       <Input isPassword label="Password" placeholder="******"/>
       <View style={styles.agreeRow}>
-         <Checkbox checked={checked} onCheck={setChecked}/>
-         <Text style={styles.agreeText}>I agree with <Text style={styles.agreeTextBold}>Terms & Privacy</Text></Text>
-       </View>
+        <Checkbox checked={checked} onCheck={setChecked}/>
+        <Text style={styles.agreeText}>I agree with <Text style={styles.agreeTextBold}>Terms & Privacy</Text></Text>
+      </View>
+      <Button title="Sign in" onPress={() => console.log('Sign Up pressed')} />
     </View>
   );
 };

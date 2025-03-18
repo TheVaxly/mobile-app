@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import { colors } from "@/utils/colour";
 import { StyleSheet } from "react-native";
  
@@ -7,6 +8,7 @@ const styles = StyleSheet.create({
         padding: 24,
     },
     agreeRow: {
+        paddingBottom: 20,
         flexDirection: 'row',
         alignItems: 'center',
     },
@@ -16,6 +18,9 @@ const styles = StyleSheet.create({
     },
     agreeTextBold: {
         fontWeight: 'bold',
+    },
+    Button: {
+        marginVertical: 20,
     },
 });
  

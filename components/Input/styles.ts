@@ -4,7 +4,6 @@ import { colors } from "@/utils/colour";
  const styles = StyleSheet.create({
      container: {
          marginBottom: 20,
-         paddingHorizontal: 16
      },
      inputContainer: {
          borderWidth: 1,
