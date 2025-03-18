@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
         padding: 24,
     },
     agreeRow: {
+        paddingBottom: 20,
         flexDirection: 'row',
         alignItems: 'center',
     },

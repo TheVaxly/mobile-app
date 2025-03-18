@@ -10,7 +10,7 @@ import { StyleSheet } from "react-native";
      justifyContent: 'center',
      alignItems: 'center',
      padding: 16,
-     marginBottom: 50,
+     marginBottom: 25,
    },
    image: {
      width: 30,
