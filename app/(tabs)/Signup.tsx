@@ -30,6 +30,9 @@ import Seperator from "@/components/Separator";
       </View>
       <Button title="Sign in" onPress={() => console.log('Sign Up pressed')} />
       <Seperator text='Or sign up with' />
+      <Text style={styles.footerText}>Already have an account? 
+         <Text style={styles.footerLink}> Sign In</Text>
+       </Text>
     </View>
   );
 };
