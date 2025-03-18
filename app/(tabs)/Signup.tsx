@@ -9,6 +9,7 @@ import { useState } from "react";
 import { Text } from "react-native";
 import Button from "@/components/Button";
 import Seperator from "@/components/Separator";
+import Google from "@/components/Google/index";
 
  const Signup = () => {
   const [checked, setChecked] = useState(false)
@@ -30,6 +31,7 @@ import Seperator from "@/components/Separator";
       </View>
       <Button title="Sign in" onPress={() => console.log('Sign Up pressed')} />
       <Seperator text='Or sign up with' />
+      <Google />
       <Text style={styles.footerText}>Already have an account? 
          <Text style={styles.footerLink}> Sign In</Text>
        </Text>

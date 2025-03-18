@@ -8,7 +8,6 @@ const styles = StyleSheet.create({
         padding: 24,
     },
     agreeRow: {
-        paddingBottom: 20,
         flexDirection: 'row',
         alignItems: 'center',
     },
@@ -23,7 +22,6 @@ const styles = StyleSheet.create({
         marginVertical: 20,
     },
     footerText: {
-        marginTop: 56,
         color: colors.blue,
         textAlign: 'center',
       },

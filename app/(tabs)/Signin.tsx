@@ -3,12 +3,12 @@ import Header from "@/components/AuthHeader/index";
 import { useNavigation } from "@react-navigation/native";
 import { NavigationProp } from "@react-navigation/native";
 import Input from "@/components/Input";
-import Checkbox from "@/components/Checkbox";
 import styles from "./styles";
 import { useState } from "react";
 import { Text } from "react-native";
 import Button from "@/components/Button";
 import Seperator from "@/components/Separator";
+import Google from "@/components/Google/index";
 
  const Signin = () => {
   const [checked, setChecked] = useState(false)
@@ -25,6 +25,7 @@ import Seperator from "@/components/Separator";
       <Input isPassword label="Password" placeholder="******"/>
       <Button title="Sign in" onPress={() => console.log('Sign in pressed')} />
       <Seperator text='Or sign in with' />
+      <Google />
       <Text style={styles.footerText}>Don't have an account? 
          <Text style={styles.footerLink}> Sign up</Text>
        </Text>
