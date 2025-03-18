@@ -8,9 +8,9 @@ import { colors } from "@/utils/colour";
      paddingHorizontal: 24,
      paddingTop: 16,
      width: "100%",
-     position: "absolute",
      top: 0,
      left: 0,
+     marginBottom: 54,
    },
    backIcon: {
      width: 18,
