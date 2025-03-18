@@ -8,6 +8,7 @@ import styles from "./styles";
 import { useState } from "react";
 import { Text } from "react-native";
 import Button from "@/components/Button";
+import Seperator from "@/components/Separator";
 
  const Signup = () => {
   const [checked, setChecked] = useState(false)
@@ -28,6 +29,7 @@ import Button from "@/components/Button";
         <Text style={styles.agreeText}>I agree with <Text style={styles.agreeTextBold}>Terms & Privacy</Text></Text>
       </View>
       <Button title="Sign in" onPress={() => console.log('Sign Up pressed')} />
+      <Seperator text='Or sign up with' />
     </View>
   );
 };
