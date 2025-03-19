@@ -1,10 +1,13 @@
-import { View, Text } from "react-native";
+import { View, Text, SafeAreaView } from "react-native";
 import styles from "./styles";
+import Header from "@/components/Header";
 
-export default function Favorites() {
+export default function Profile() {
     return (
-        <View>
-            <Text>Profile</Text>
-        </View>
+        <SafeAreaView>
+            <View>
+                <Header title="Profile" showBack={true} showLogout={true} />
+            </View>
+        </SafeAreaView>
     )
 }

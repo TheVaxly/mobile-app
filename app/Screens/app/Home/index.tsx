@@ -1,10 +1,14 @@
-import { View, Text } from "react-native";
+import { View, Text, SafeAreaView } from "react-native";
 import styles from "./styles";
+import Header from "@/components/Header";
 
-export default function Favorites() {
+export default function Home() {
+
     return (
-        <View>
-            <Text>Home</Text>
-        </View>
+        <SafeAreaView>
+            <View>
+                <Header title="Find All You Need" showBack={false} showSearch={true} />
+            </View>
+        </SafeAreaView>
     )
 }

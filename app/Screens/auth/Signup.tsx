@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, SafeAreaView } from "react-native";
 import styles from "./styles";
-import Header from "@/components/AuthHeader";
+import Header from "@/components/Header";
 import Input from "@/components/Input";
 import Checkbox from "@/components/Checkbox"
 import Seperator from "@/components/Separator";
