@@ -1,7 +1,7 @@
 import { View, Text, ScrollView, Image, SafeAreaView, Pressable, Linking } from 'react-native';
 import { useLocalSearchParams, router } from 'expo-router';
 import { products } from '@/utils/data';
-import styles from './productDetailsStyle';
+import styles from './productsDetailsStyle';
 import Button from '@/components/Button';
 import { Ionicons } from '@expo/vector-icons';
 import ImageCarusel from '@/components/ImageCarusel';

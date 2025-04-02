@@ -9,7 +9,7 @@ export default function Favorites() {
     const renderItem = ({item}: {item: any}) => {
         const handlePress = () => {
             router.push({
-                pathname: '/(app)/productDetails',
+                pathname: '/(app)/(tabs)/productDetails',
                 params: { id: item.id }
             });
         }
@@ -22,7 +22,7 @@ export default function Favorites() {
 
     return (
         <SafeAreaView style={styles.container}>
-            <Header title="Favorites" showBack={false} showSearch={true} />
+            <Header title="Favorites" showBack />
             <FlatList 
                 data={products} 
                 renderItem={renderItem}

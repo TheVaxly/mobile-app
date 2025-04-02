@@ -9,7 +9,6 @@ import { router } from "expo-router";
 
 export default function Home() {
     const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
-    const [selectedProducts, setSelectedProducts] = useState<number[]>([]);
     const [keyword, setKeyword] = useState<string>("");
 
     const renderCategoriItem = (item: any) => {
@@ -29,7 +28,7 @@ export default function Home() {
             <ProductHomeItem {...item} 
                 onPress={() => {
                     router.push({
-                        pathname: '/(app)/productDetails',
+                        pathname: '/(app)/(tabs)/productDetails',
                         params: { id: item.id }
                     });
                 }}
@@ -52,7 +51,7 @@ export default function Home() {
     return (
         <SafeAreaView style={styles.container}>
             <View>
-                <Header title="Find All You Need" onSearchKeyword={setKeyword} keyword={keyword} showBack={false} showSearch={true} />
+                <Header title="Find All You Need" onSearchKeyword={setKeyword} keyword={keyword} showSearch/>
                 <FlatList
                     style={styles.list}
                     horizontal
@@ -74,4 +73,4 @@ export default function Home() {
             </View>
         </SafeAreaView>
     )
-}
+} 
