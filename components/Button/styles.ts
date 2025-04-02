@@ -6,17 +6,11 @@ const styles = StyleSheet.create({
     backgroundColor: colors.blue,
     paddingVertical: 20,
     paddingHorizontal: 8,
-    borderRadius: 8,
+    borderRadius: 8 ,
     width: "100%",
   },
   title: {
     color: colors.white,
-    textAlign: "center",
-    fontSize: 16,
-    fontWeight: "bold",
-  },
-  textButton: {
-    color: colors.blue,
     textAlign: "center",
     fontSize: 16,
     fontWeight: "bold",

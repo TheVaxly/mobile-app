@@ -3,6 +3,8 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
+    backgroundColor: '#fff',
     padding: 24,
   },
   agreeRow: {
@@ -27,13 +29,12 @@ const styles = StyleSheet.create({
   },
   footerText: {
     color: colors.blue,
-    textAlign: 'center',
   },
   footerLink: {
     color: colors.blue,
     fontWeight: 'bold',
-    marginLeft: 4,
-  }
+    marginLeft: 8,
+  },
 });
 
 export default styles;

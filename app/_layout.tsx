@@ -1,19 +1,21 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import SplashScreen from './index';
-import Signin from './Screens/auth/Signin';
-import Signup from './Screens/auth/Signup';
-import { SafeAreaView } from 'react-native';
+import { Slot, Stack } from 'expo-router';
+import { View } from 'react-native';
+import { AuthProvider } from '@/utils/auth'
 
-const Stack = createNativeStackNavigator();
-
-export default function Layout() {
+export default function RootLayout() {
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: '#fff'}}>
-      <Stack.Navigator>
-        <Stack.Screen name="index" component={SplashScreen} options={{ headerShown: false }}/>
-        <Stack.Screen name="Signin" component={Signin} options={{ headerShown: false }}/>
-        <Stack.Screen name="Signup" component={Signup} options={{ headerShown: false }}/>
-      </Stack.Navigator>
-    </SafeAreaView>
+    <AuthProvider>
+      <View style={{ flex: 1, backgroundColor: '#fff' }}>
+        <Stack
+          screenOptions={{
+            headerShown: false,
+            contentStyle: { backgroundColor: '#fff' }
+          }}
+        >
+          <Stack.Screen name="(auth)" />
+          <Stack.Screen name="(app)" />
+        </Stack>
+      </View>
+    </AuthProvider>
   );
 }

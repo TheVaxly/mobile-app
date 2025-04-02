@@ -4,23 +4,22 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   container: {
     marginHorizontal: 8,
+    flexDirection: 'column',
+    justifyContent: 'center',
     alignItems: 'center',
-    padding: 6,
-    borderRadius: 12,
   },
   title: {
     color: colors.grey,
-    marginTop: 8,
-    textAlign: 'center',
   },
   image: {
-    width: 40,
-    height: 40,
+    width: 32,
+    height: 32,
   },
   imageContainer: {
-    padding: 10,
-    borderRadius: 8,
     backgroundColor: colors.lightGrey,
+    padding: 8,
+    borderRadius: 8,
+    marginBottom: 8,
   }
 });
 

@@ -5,23 +5,19 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "center",
-    marginBottom: 10,
+    marginBottom: 54,
     marginTop: 10,
     marginLeft: 10,
-    position: "relative",
   },
   Icon: {
-    width: 20,
-    height: 20,
+    width: 18,
+    height: 18,
   },
   title: {
-    color: colors.black,
-    fontSize: 20,
+    color: colors.blue,
+    fontSize: 26,
     fontWeight: "500",
     paddingHorizontal: 16,
-    flex: 1,
-    textAlign: "center",
   },
   space: {
     width: 24,

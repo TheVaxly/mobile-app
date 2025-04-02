@@ -1,12 +1,13 @@
-import { TouchableOpacity, Text, ViewStyle } from "react-native";
+import { TouchableOpacity, Text, ViewStyle  } from "react-native";
 import styles from "./styles";
+import { colors } from "@/utils/colour";
+const Button = ({ title, onPress, style, color = colors.white }: { title: string, onPress?: () => void, style?: ViewStyle, color?: string }) => {
 
-const Button = ({ title, onPress, style }: { title: string, onPress: () => void, style?: ViewStyle }) => {
   return (
-    <TouchableOpacity style={[styles.container, style]} activeOpacity={0.8} onPress={onPress}>
-      <Text style={styles.title}>{title}</Text>
+    <TouchableOpacity style={[styles.container, style]} activeOpacity={0.6} onPress={onPress}>
+      <Text style={[styles.title, {color: color}]}>{title}</Text>
     </TouchableOpacity>
   );
 };
 
-export default Button;  
+export default Button;
