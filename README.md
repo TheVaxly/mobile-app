@@ -1,50 +1,100 @@
-# Welcome to your Expo app 👋
+# Mobile Shopping App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern React Native mobile application built with Expo Router for a seamless shopping experience.
 
-## Get started
+## Features
 
-1. Install dependencies
+- 🔐 **Authentication System**
+  - Sign In/Sign Up functionality
+  - Google Sign-In integration
+  - Protected routes and authentication state management
 
-   ```bash
-   npm install
-   ```
+- 🏠 **Home Screen**
+  - Category filtering
+  - Product search functionality
+  - Dynamic product grid display
+  - Category selection with visual feedback
 
-2. Start the app
+- ❤️ **Favorites System**
+  - Save favorite products
+  - Quick access to saved items
+  - Detailed product view from favorites
 
-   ```bash
-    npx expo start
-   ```
+- 👤 **User Profile**
+  - Personal information management
+  - Settings and preferences
 
-In the output, you'll find options to open the app in a
+- 🛍️ **Product Details**
+  - Detailed product information
+  - Image carousel
+  - Contact seller functionality
+  - Direct phone and email integration
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Tech Stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- React Native
+- Expo Router for navigation
+- TypeScript for type safety
+- Expo Vector Icons
+- React Native Reanimated
+- React Native Safe Area Context
 
-## Get a fresh project
+## Getting Started
 
-When you're ready, run:
+### Prerequisites
 
+- Node.js
+- npm or yarn
+- Expo CLI
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run reset-project
+git clone [repository-url]
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies:
+```bash
+npm install
+```
 
-## Learn more
+3. Start the development server:
+```bash
+npm start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+4. Run on your preferred platform:
+```bash
+# For iOS
+npm run ios
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# For Android
+npm run android
 
-## Join the community
+# For web
+npm run web
+```
 
-Join our community of developers creating universal apps.
+## Project Structure
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```
+app/
+├── (app)/             # Protected app routes
+│   ├── (tabs)/       # Tab navigation
+│   └── _layout.tsx   # App layout configuration
+├── (auth)/           # Authentication routes
+│   ├── signin.tsx
+│   ├── signup.tsx
+│   └── _layout.tsx
+├── components/       # Reusable components
+└── utils/           # Utility functions and constants
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
